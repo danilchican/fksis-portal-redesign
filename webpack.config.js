@@ -4,6 +4,11 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const extractCSS = new ExtractTextPlugin('css/[name].css');
 const extractImages = new CopyWebpackPlugin([{from: './src/images', to: 'images'}]);
+const extractHTML = new CopyWebpackPlugin([{
+    from: './src/*.html',
+    to: path.resolve(__dirname, 'build/[name].[ext]'),
+    toType: 'template'
+}]);
 
 module.exports = {
     entry: {
@@ -39,6 +44,7 @@ module.exports = {
     },
     plugins: [
         extractCSS,
-        extractImages
+        extractImages,
+        extractHTML
     ]
 };

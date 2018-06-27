@@ -1,7 +1,9 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const extractCSS = new ExtractTextPlugin('css/[name].css');
+const extractImages = new CopyWebpackPlugin([{from: './src/images', to: 'images'}]);
 
 module.exports = {
     entry: {
@@ -36,6 +38,7 @@ module.exports = {
         ]
     },
     plugins: [
-        extractCSS
+        extractCSS,
+        extractImages
     ]
 };

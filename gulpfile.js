@@ -1,33 +1,35 @@
 let gulp = require('gulp'),
-    autoprefixer = require('gulp-autoprefixer'),
     cleancss = require('gulp-clean-css'),
     notify = require('gulp-notify'),
     rename = require('gulp-rename'),
-    sass = require('gulp-ruby-sass'),
     uglify = require('gulp-uglify');
 
-// gulp task to combine styles
-gulp.task('styles', function () {
-    return sass('src/scss/**/*.scss', {style: 'expanded'})
-        .pipe(autoprefixer('last 3 versions'))
-        .pipe(gulp.dest('build/css'))
+// gulp task to minify styles
+gulp.task('minify-styles', function () {
+    return gulp.src('./build/css/**/*.css')
         .pipe(rename({suffix: '.min'}))
         .pipe(cleancss({inline: ['none']}))
         .pipe(gulp.dest('build/css'))
-        .pipe(notify({message: 'Styles task complete'}));
+        .pipe(notify({message: 'Minify styles task is completed.'}));
 });
 
-// gulp task to combine scripts
-gulp.task('scripts', function () {
-    return gulp.src('./src/js/**/*.js')
-        .pipe(gulp.dest('build/js'))
+// gulp task to minify scripts
+gulp.task('minify-scripts', function () {
+    return gulp.src('./build/js/**/*.js')
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
-        .pipe(gulp.dest('build/js'));
+        .pipe(gulp.dest('build/js'))
+        .pipe(notify({message: 'Minify scripts task is completed.'}));
+});
+
+// gulp task to minify all styles and scripts
+gulp.task('minify', function () {
+    gulp.start('minify-styles');
+    gulp.start('minify-scripts');
 });
 
 // gulp watcher
 gulp.task('watch', function () {
-    gulp.watch('src/scss/**/*.scss', ['styles']);
-    gulp.watch('src/js/**/*.js', ['scripts']);
+    gulp.watch('build/css/**/*.css', ['minify-styles']);
+    gulp.watch('build/js/**/*.js', ['minify-scripts']);
 });

@@ -18,12 +18,7 @@ module.exports = {
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
                     use: [{
-                        loader: 'css-loader', // translates CSS into CommonJS modules
-                        options: {
-                            url: false,
-                            minimize: true,
-                            sourceMap: true
-                        }
+                        loader: 'css-loader' // translates CSS into CommonJS modules
                     }, {
                         loader: 'postcss-loader', // Run post css actions
                         options: {

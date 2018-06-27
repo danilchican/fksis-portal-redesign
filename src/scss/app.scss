@@ -1,5 +1,78 @@
 @import "~bootstrap/scss/bootstrap";
+@import "./bootstrap-helpers";
 
-body {
-  backface-visibility: hidden;
+#fksis-header {
+  height: 80px;
+  color: $white;
+  font-size: 12px;
+  background: linear-gradient(bottom, rgb(34, 34, 34) 5%, rgb(68, 68, 68) 53%);
+  background: -o-linear-gradient(bottom, rgb(34, 34, 34) 5%, rgb(68, 68, 68) 53%);
+  background: -moz-linear-gradient(bottom, rgb(34, 34, 34) 5%, rgb(68, 68, 68) 53%);
+  background: -webkit-linear-gradient(bottom, rgb(34, 34, 34) 5%, rgb(68, 68, 68) 53%);
+  background: -ms-linear-gradient(bottom, rgb(34, 34, 34) 5%, rgb(68, 68, 68) 53%);
+  background: -webkit-gradient(
+                  linear,
+                  left bottom,
+                  left top,
+                  color-stop(0.05, rgb(34, 34, 34)),
+                  color-stop(0.53, rgb(68, 68, 68))
+  );
+
+  .fksis-logo-bg {
+    background: left top url('../images/glow.png') no-repeat;
+  }
+
+  #fksis-logo {
+    float: left;
+    margin-right: 13px;
+  }
+
+  #fksis-logo-rblock {
+    float: left;
+    color: $white;
+    margin-top: 13px;
+    font-size: 14px;
+
+    #fksis-logo-title {
+      line-height: 1;
+    }
+
+    #fksis-logo-description {
+      color: #c8c8c8;
+      font-family: Arial, sans-serif;
+      margin: 3px 0 9px;
+    }
+  }
+
+  #header-search-bar {
+    input, button[type="submit"] {
+      height: 33px;
+      border-color: #171717;
+      background: #ececec; /* Old browsers */
+      background: -moz-linear-gradient(top, #ececec 0%, #ffffff 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, #ececec 0%, #ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, #ececec 0%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ececec', endColorstr='#ffffff', GradientType=0); /* IE6-9 */
+    }
+
+    input {
+      border-right: none;
+    }
+
+    button[type="submit"] {
+      border-left: none;
+    }
+
+    .btn-outline-secondary {
+      color: #444;
+    }
+
+    .btn-outline-secondary:hover {
+      color: #596068;
+    }
+  }
+
+  #header-login {
+    font-style: italic;
+  }
 }

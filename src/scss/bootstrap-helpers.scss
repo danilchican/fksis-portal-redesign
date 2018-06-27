@@ -1,0 +1,35 @@
+* {
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+body {
+  font-family: Arial, Verdana, Tahoma, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+a {
+  color: #45ADD8;
+}
+
+a:hover {
+  color: #EE4439;
+}
+
+input {
+  font-family: Verdana;
+  font-size: 12px!important;
+}
+
+.pt-2, .pb-2, .py-25 {
+  padding-top: ($spacer * .65) !important;
+  padding-bottom: ($spacer * .65) !important;
+}

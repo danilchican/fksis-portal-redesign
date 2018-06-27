@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../build/css/app.css">
+    <title>Портал ФКСиС БГУИР - Главная</title>
+</head>
+<body>
+<div id="fksis-header">
+    <div class="container">
+        <!--HEADER START-->
+        <header class="py-25 fksis-logo-bg">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-5">
+                    <a href="/">
+                        <img src="./images/logo.png" id="fksis-logo" alt="Логотип ФКСиС"/>
+                    </a>
+                    <div id="fksis-logo-rblock">
+                        <p id="fksis-logo-title" class="mb-0">Факультет компьютерных систем и сетей</p>
+                        <small id="fksis-logo-description">веб-портал</small>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <form id="header-search-bar" action="/search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="q" required="required"
+                                   placeholder="Введите строку для поиска"
+                                   aria-label="Введите строку для поиска">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="submit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                         stroke-linejoin="round">
+                                        <circle cx="10.5" cy="10.5" r="7.5"></circle>
+                                        <line x1="21" y1="21" x2="15.8" y2="15.8"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-2 d-flex text-left">
+                    <p id="header-login" class="my-0">
+                        Вы не авторизованы.<br/>Можете <a href="/login">войти</a>
+                    </p>
+                    <!--
+                    <p id="header-login" class="my-0">
+                        Вы можете <a href="/dashboard">перейти</a><br/>в панель администратора
+                    </p>
+                    -->
+                </div>
+            </div>
+        </header>
+        <!--HEADER END-->
+    </div>
+</div>
+
+<!-- Popper.js -->
+<!-- TODO <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
+<script src="../build/js/app.js"></script>
+
+</body>
+</html>

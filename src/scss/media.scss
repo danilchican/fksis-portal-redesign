@@ -1,0 +1,52 @@
+@media (max-width: 1199px) {
+  #fksis-quick-links {
+    img {
+      max-width: 205px;
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .d-md-search-bar {
+    display: none !important;
+  }
+
+  .d-md-logo-block {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  #fksis-quick-links {
+    img {
+      max-width: 150px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #fksis-quick-links {
+    img {
+      max-width: 105px;
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  #fksis-quick-links {
+    display: none;
+  }
+}
+
+@media (min-width: 497px) {
+  .fksis-logo-bg {
+    background: left top url('../images/glow.png') no-repeat;
+  }
+}
+
+@media (max-width: 410px) {
+  #fksis-header {
+    #fksis-logo-rblock {
+      display: none;
+    }
+  }
+}

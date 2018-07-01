@@ -13,7 +13,7 @@
     <div class="container">
         <header class="py-25 fksis-logo-bg">
             <div class="row flex-nowrap justify-content-between align-items-center">
-                <div class="col-5">
+                <div class="col-md-6 col-sm-12 d-md-logo-block">
                     <a href="/">
                         <img src="./images/logo.png" id="fksis-logo" alt="Логотип ФКСиС"/>
                     </a>
@@ -22,7 +22,7 @@
                         <small id="fksis-logo-description">веб-портал</small>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-md-5 d-md-block d-sm-none d-md-search-bar">
                     <form id="header-search-bar" action="/search">
                         <div class="input-group">
                             <input type="text" class="form-control" name="q" required="required"
@@ -41,16 +41,6 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-2 d-flex text-left">
-                    <p id="header-login" class="my-0">
-                        Вы не авторизованы.<br/>Можете <a href="/login">войти</a>
-                    </p>
-                    <!--
-                    <p id="header-login" class="my-0">
-                        Вы можете <a href="/dashboard">перейти</a><br/>в панель администратора
-                    </p>
-                    -->
-                </div>
             </div>
         </header>
     </div>
@@ -60,6 +50,8 @@
 <!--INDEX PAGE CONTENT START-->
 <div id="fksis-content">
     <div class="container">
+
+        <!--INDEX PAGE INFO BLOCKS START-->
         <div class="row">
             <div class="col-md-6 col-sm-12 col-xs-12">
                 <div class="info-block">
@@ -156,6 +148,32 @@
                 </div>
             </div>
         </div>
+        <!--INDEX PAGE INFO BLOCKS END-->
+
+        <!--INDEX PAGE QUICK LINKS START-->
+        <div class="row" id="fksis-quick-links">
+            <div class="col-3 text-center">
+                <a href="/">
+                    <img src="./images/index-media/bit-cup.png" alt="Bit Cup">
+                </a>
+            </div>
+            <div class="col-3 text-center">
+                <a href="/">
+                    <img src="./images/index-media/photos.png" alt="Фотогалерея">
+                </a>
+            </div>
+            <div class="col-3 text-center">
+                <a href="/">
+                    <img src="./images/index-media/olympiads.png" alt="Олимпиады">
+                </a>
+            </div>
+            <div class="col-3 text-center">
+                <a href="/">
+                    <img src="./images/index-media/online-courses.png" alt="Online курсы">
+                </a>
+            </div>
+        </div>
+        <!--INDEX PAGE QUICK LINKS END-->
     </div>
 </div>
 <!--INDEX PAGE CONTENT END-->

@@ -1,5 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
 @import "./bootstrap-helpers";
+@import "./media";
 
 #fksis-header {
   height: 80px;
@@ -17,10 +18,6 @@
                   color-stop(0.05, rgb(34, 34, 34)),
                   color-stop(0.53, rgb(68, 68, 68))
   );
-
-  .fksis-logo-bg {
-    background: left top url('../images/glow.png') no-repeat;
-  }
 
   #fksis-logo {
     float: left;
@@ -72,76 +69,70 @@
       color: #596068;
     }
   }
-
-  #header-login {
-    font-style: italic;
-  }
 }
 
 #fksis-content {
   background: left top url('../images/gradient.png') repeat-x;
   min-height: 500px;
-  padding: 25px 0 0 0;
-}
+  padding: 25px 0;
 
-.info-block {
-  border: 2px solid #dcdcdc;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  margin-bottom: 25px;
+  .info-block {
+    border: 2px solid #dcdcdc;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin-bottom: 25px;
 
-  .info-block-head {
-    padding: 6px 10px;
-    color: #868686;
-    font-size: 11px;
-    text-transform: uppercase;
-    line-height: 1em;
-    border-radius: 4px 4px 0 0;
-    -moz-border-radius: 4px 4px 0 0;
-    -webkit-border-radius: 4px 4px 0 0;
-    background: #f8f8f8; /* Old browsers */
-    background: -moz-linear-gradient(top, #f8f8f8 0%, #f1f1f1 95%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #f8f8f8 0%, #f1f1f1 95%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #f8f8f8 0%, #f1f1f1 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f8f8', endColorstr='#f1f1f1', GradientType=0); /* IE6-9 */
-  }
+    .info-block-head {
+      padding: 6px 10px;
+      color: #868686;
+      font-size: 11px;
+      text-transform: uppercase;
+      line-height: 1em;
+      border-radius: 4px 4px 0 0;
+      -moz-border-radius: 4px 4px 0 0;
+      -webkit-border-radius: 4px 4px 0 0;
+      background: #f8f8f8; /* Old browsers */
+      background: -moz-linear-gradient(top, #f8f8f8 0%, #f1f1f1 95%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, #f8f8f8 0%, #f1f1f1 95%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, #f8f8f8 0%, #f1f1f1 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f8f8', endColorstr='#f1f1f1', GradientType=0); /* IE6-9 */
+    }
 
-  .info-block-content.info-list .info-list-item {
-    border-bottom: 1px dashed #E3E3E3;
-    padding: 0.5em 1em;
+    .info-block-content.info-list .info-list-item {
+      border-bottom: 1px dashed #E3E3E3;
+      padding: 0.5em 1em;
 
-    .info-item-publish-date {
+      .info-item-publish-date {
+        font-size: 13px;
+        color: #aaa;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+
+      .info-item-description {
+        padding: 0.5em 0;
+        line-height: 1.8em;
+        font-size: 13px;
+        text-align: justify;
+      }
+    }
+
+    .info-block-content.info-list .info-list-item:last-child {
+      border-bottom: none;
+    }
+
+    .info-block-footer {
+      padding: 0.5em 1em 0.5em 1em;
+      border-top: 1px solid #ECECEC;
       font-size: 13px;
-      color: #aaa;
+      text-transform: lowercase;
     }
 
-    p {
-      margin-bottom: 0;
-    }
-
-    .info-item-description {
-      padding: 0.5em 0;
-      line-height: 1.8em;
-      font-size: 13px;
-      text-align: justify;
-    }
-  }
-
-  .info-block-content.info-list .info-list-item:last-child {
-    border-bottom: none;
-  }
-
-  .info-block-footer {
-    padding: 0.5em 1em 0.5em 1em;
-    border-top: 1px solid #ECECEC;
-    font-size: 13px;
-    text-transform: lowercase;
-  }
-
-  .info-block-content.news-list {
-    .info-news-item {
+    .info-block-content.news-list .info-news-item {
       .info-item-description {
         .info-news-item-image {
           width: 100px;
@@ -150,6 +141,16 @@
           float: left;
         }
       }
+    }
+  }
+
+  #fksis-quick-links {
+    a {
+      opacity: 0.3;
+    }
+
+    a:hover {
+      opacity: 1;
     }
   }
 }

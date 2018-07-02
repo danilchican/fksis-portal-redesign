@@ -3,7 +3,11 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const extractCSS = new ExtractTextPlugin('css/[name].css');
-const extractImages = new CopyWebpackPlugin([{from: './src/images', to: 'images'}]);
+const extractImages = new CopyWebpackPlugin([{
+    from: './src/images/**/*',
+    to: path.resolve(__dirname, 'build/images/[name].[ext]'),
+    toType: 'template'
+}]);
 const extractHTML = new CopyWebpackPlugin([{
     from: './src/*.html',
     to: path.resolve(__dirname, 'build/[name].[ext]'),

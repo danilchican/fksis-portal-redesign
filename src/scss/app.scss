@@ -42,34 +42,6 @@
     }
   }
 
-  #header-search-bar {
-    input, button[type="submit"] {
-      height: 33px;
-      border-color: #171717;
-      background: #ececec; /* Old browsers */
-      background: -moz-linear-gradient(top, #ececec 0%, #ffffff 100%); /* FF3.6-15 */
-      background: -webkit-linear-gradient(top, #ececec 0%, #ffffff 100%); /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(to bottom, #ececec 0%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ececec', endColorstr='#ffffff', GradientType=0); /* IE6-9 */
-    }
-
-    input {
-      border-right: none;
-    }
-
-    button[type="submit"] {
-      border-left: none;
-    }
-
-    .btn-outline-secondary {
-      color: #444;
-    }
-
-    .btn-outline-secondary:hover {
-      color: #596068;
-    }
-  }
-
   .navbar-toggler {
     border: 1px solid #7d7b7b;
     outline: none;
@@ -160,6 +132,12 @@
       .dropdown-menu {
         display: block;
       }
+    }
+  }
+
+  #nav-search-bar {
+    input, button {
+      border-color: #036756;
     }
   }
 }

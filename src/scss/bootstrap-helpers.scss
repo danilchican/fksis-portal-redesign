@@ -26,7 +26,7 @@ a:hover {
 
 input {
   font-family: Verdana, serif;
-  font-size: 12px!important;
+  font-size: 12px !important;
 }
 
 .pt-2, .pb-2, .py-25 {
@@ -37,4 +37,33 @@ input {
 .py-35 {
   padding-top: ($spacer * 2) !important;
   padding-bottom: ($spacer * 2) !important;
+}
+
+.head-search-bar {
+  input, button[type="submit"], button[type="submit"]:hover,
+  .btn-outline-secondary:not(:disabled):not(.disabled):active {
+    height: 33px;
+    border-color: #171717;
+    background: #ececec; /* Old browsers */
+    background: -moz-linear-gradient(top, #ececec 0%, #ffffff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ececec 0%, #ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ececec 0%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ececec', endColorstr='#ffffff', GradientType=0); /* IE6-9 */
+  }
+
+  input {
+    border-right: none;
+  }
+
+  button[type="submit"] {
+    border-left: none;
+  }
+
+  .btn-outline-secondary {
+    color: #444;
+  }
+
+  .btn-outline-secondary:hover {
+    color: #596068;
+  }
 }

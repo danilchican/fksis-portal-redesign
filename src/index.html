@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <div class="col-md-5 d-md-block d-sm-none d-md-search-bar">
-                    <form id="header-search-bar" action="/search">
+                    <form id="header-search-bar" class="head-search-bar" action="/search">
                         <div class="input-group">
                             <input type="text" class="form-control" name="q" required="required"
                                    placeholder="Введите строку для поиска"
@@ -56,6 +56,24 @@
 <!--TOP NAVIGATION START-->
 <div id="fksis-top-nav">
     <div class="container">
+        <form id="nav-search-bar" class="head-search-bar my-2 d-lg-none" action="/search">
+            <div class="input-group">
+                <input type="text" class="form-control" name="q" required="required"
+                       placeholder="Введите строку для поиска"
+                       aria-label="Введите строку для поиска">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                             stroke-linejoin="round">
+                            <circle cx="10.5" cy="10.5" r="7.5"></circle>
+                            <line x1="21" y1="21" x2="15.8" y2="15.8"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </form>
+
         <nav class="navbar navbar-expand-lg">
             <div class="collapse navbar-collapse" id="fksis-top-nav-menu">
                 <ul class="navbar-nav mr-auto">

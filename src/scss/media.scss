@@ -17,6 +17,26 @@
     display: none !important;
   }
 
+  #fksis-slider {
+    .container {
+      max-width: 960px;
+    }
+
+    .carousel-item {
+      .carousel-item-title {
+        font-size: 33px !important;
+      }
+
+      .carousel-item-description {
+        font-size: 16px !important;
+      }
+
+      .carousel-item-rblock {
+        padding-left: 100px !important;
+      }
+    }
+  }
+
   @media (min-width: 483px) {
     .d-md-logo-block {
       flex: 0 0 83.33333%;

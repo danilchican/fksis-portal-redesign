@@ -69,6 +69,16 @@
       color: #596068;
     }
   }
+
+  .navbar-toggler {
+    border: 1px solid #7d7b7b;
+    outline: none;
+    padding: 0.15rem 0.45rem;
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+  }
 }
 
 #fksis-top-nav {
@@ -78,7 +88,7 @@
   background: -moz-linear-gradient(top, #7db9e8 0%, #04846c 0%, #026757 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #7db9e8 0%, #04846c 0%, #026757 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #7db9e8 0%, #04846c 0%, #026757 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7db9e8', endColorstr='#026757', GradientType=0); /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=' #7db9e8 ', endColorstr=' #026757 ', GradientType=0); /* IE6-9 */
 
   .navbar {
     padding: 0;
@@ -138,7 +148,7 @@
       padding-right: 6px;
 
       > a {
-        background: right 22px url('../images/nav-arrows.png') no-repeat;
+        background: right 22px url(' ../images/nav-arrows.png ') no-repeat;
       }
     }
 
@@ -155,7 +165,7 @@
 }
 
 #fksis-content {
-  background: left top url('../images/gradient.png') repeat-x;
+  background: left top url(' ../images/gradient.png ') repeat-x;
   min-height: 500px;
   padding: 25px 0;
 
@@ -180,7 +190,7 @@
       background: -moz-linear-gradient(top, #f8f8f8 0%, #f1f1f1 95%); /* FF3.6-15 */
       background: -webkit-linear-gradient(top, #f8f8f8 0%, #f1f1f1 95%); /* Chrome10-25,Safari5.1-6 */
       background: linear-gradient(to bottom, #f8f8f8 0%, #f1f1f1 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f8f8', endColorstr='#f1f1f1', GradientType=0); /* IE6-9 */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=' #f8f8f8 ', endColorstr=' #f1f1f1 ', GradientType=0); /* IE6-9 */
     }
 
     .info-block-content.info-list .info-list-item {
@@ -257,7 +267,7 @@
   }
 
   .fksis-footer-contacts {
-    background: url('../images/phone.png') left center no-repeat;
+    background: url(' ../images/phone.png ') left center no-repeat;
     font-size: 30px;
     font-style: italic;
     line-height: 2rem;

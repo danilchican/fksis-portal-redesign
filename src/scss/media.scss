@@ -17,9 +17,11 @@
     display: none !important;
   }
 
-  .d-md-logo-block {
-    max-width: 100%;
-    flex: 0 0 100%;
+  @media (min-width: 483px) {
+    .d-md-logo-block {
+      flex: 0 0 83.33333%;
+      max-width: 83.33333%;
+    }
   }
 
   #fksis-quick-links {
@@ -72,6 +74,14 @@
 @media (min-width: 497px) {
   .fksis-logo-bg {
     background: left top url('../images/glow.png') no-repeat;
+  }
+}
+
+@media (max-width: 482px) {
+  #fksis-header {
+    #fksis-logo-rblock {
+      display: none;
+    }
   }
 }
 

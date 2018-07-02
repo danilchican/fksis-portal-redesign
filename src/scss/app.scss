@@ -154,3 +154,29 @@
     }
   }
 }
+
+#fksis-footer {
+  background-color: #272727;
+  color: #616161;
+  font-size: 13px;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  #fksis-footer-socials-list {
+    list-style: none;
+
+    li {
+      float: left;
+      margin-right: 0.1rem;
+    }
+  }
+
+  .fksis-footer-contacts {
+    background: url('../images/phone.png') left center no-repeat;
+    font-size: 30px;
+    font-style: italic;
+    line-height: 2rem;
+  }
+}

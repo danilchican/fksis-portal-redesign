@@ -25,11 +25,16 @@ a:hover {
 }
 
 input {
-  font-family: Verdana;
+  font-family: Verdana, serif;
   font-size: 12px!important;
 }
 
 .pt-2, .pb-2, .py-25 {
   padding-top: ($spacer * .65) !important;
   padding-bottom: ($spacer * .65) !important;
+}
+
+.py-35 {
+  padding-top: ($spacer * 2) !important;
+  padding-bottom: ($spacer * 2) !important;
 }

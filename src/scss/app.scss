@@ -85,9 +85,9 @@
       border-radius: 0 0 5px 5px;
       -moz-border-radius: 0 0 5px 5px;
       -webkit-border-radius: 0 0 5px 5px;
-      box-shadow: 0 2px 6px 0 rgba(0,0,0,0.45);
-      -webkit-box-shadow: 0 2px 6px 0 rgba(0,0,0,0.45);
-      -moz-box-shadow: 0 2px 6px 0 rgba(0,0,0,0.45);
+      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.45);
+      -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.45);
+      -moz-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.45);
 
       .dropdown-item {
         padding: 16px 28px 16px 15px;
@@ -150,10 +150,41 @@
   border-top: 1px solid #036352;
   padding-top: 20px;
 
-  #carouselExampleControls {
+  #fksis-slider-content {
     .carousel-item {
       background: left bottom url(' ../images/slider-light.png') no-repeat;
       padding: 0 65px;
+    }
+
+    .carousel-item-title {
+      color: #E7FBF0;
+      font-size: 40px;
+      font-weight: bold;
+      margin-top: 32px;
+      background: -webkit-linear-gradient(#ffffff, #d1d1d1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .carousel-item-description {
+      color: #fff;
+      font-size: 18px;
+      line-height: 1.5em;
+      margin: 5px 0 15px 0;
+    }
+
+    .slider-more-link {
+      font-size: 17px;
+      color: #0B4331;
+      border-color: #225646;
+      background: -moz-linear-gradient(top, #ffffff 0%, #d1d1d1 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, #ffffff 0%, #d1d1d1 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, #ffffff 0%, #d1d1d1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=' #ffffff ', endColorstr=' #d1d1d1 ', GradientType=0); /* IE6-9 */
+    }
+
+    .slider-more-link:hover {
+      color: #EE4439;
     }
   }
 }

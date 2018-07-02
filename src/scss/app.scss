@@ -71,6 +71,89 @@
   }
 }
 
+#fksis-top-nav {
+  border-top: 1px solid #25a78f;
+  font-family: Verdana, Arial, Tahoma, sans-serif;
+  background: #7db9e8; /* Old browsers */
+  background: -moz-linear-gradient(top, #7db9e8 0%, #04846c 0%, #026757 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #7db9e8 0%, #04846c 0%, #026757 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #7db9e8 0%, #04846c 0%, #026757 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7db9e8', endColorstr='#026757', GradientType=0); /* IE6-9 */
+
+  .navbar {
+    padding: 0;
+  }
+
+  #fksis-top-nav-menu {
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 1em;
+
+    a {
+      color: #fff;
+    }
+
+    .dropdown-menu {
+      background-color: #018b73;
+      border: none;
+      margin-top: 0;
+      padding: 0;
+      min-width: 100px;
+      font-size: 12px;
+      border-radius: 0 0 5px 5px;
+      -moz-border-radius: 0 0 5px 5px;
+      -webkit-border-radius: 0 0 5px 5px;
+
+      .dropdown-item {
+        padding: 16px 28px 16px 15px;
+        border-bottom: 2px solid #0d826e;
+      }
+
+      .dropdown-item:active, .dropdown-item:hover, .dropdown-item:focus {
+        background-color: #019d82;
+      }
+
+      .dropdown-item:last-child, .dropdown-item:last-child:focus,
+      .dropdown-item:last-child:active, .dropdown-item:last-child:hover {
+        border-radius: 0 0 5px 5px;
+        -moz-border-radius: 0 0 5px 5px;
+        -webkit-border-radius: 0 0 5px 5px;
+      }
+
+    }
+
+    li > a {
+      padding: 17px 10px;
+    }
+
+    li:hover {
+      background-color: #029278;
+    }
+
+    .dropdown-toggle::after {
+      content: none;
+    }
+
+    li.dropdown {
+      padding-right: 6px;
+
+      > a {
+        background: right 22px url('../images/nav-arrows.png') no-repeat;
+      }
+    }
+
+    li.dropdown:hover {
+      a {
+        background-position-y: -31px;
+      }
+
+      .dropdown-menu {
+        display: block;
+      }
+    }
+  }
+}
+
 #fksis-content {
   background: left top url('../images/gradient.png') repeat-x;
   min-height: 500px;

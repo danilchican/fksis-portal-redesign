@@ -39,6 +39,10 @@ input {
   padding-bottom: ($spacer * 2) !important;
 }
 
+.alert > p {
+  margin-bottom: 0;
+}
+
 .head-search-bar {
   input, button[type="submit"], button[type="submit"]:hover,
   .btn-outline-secondary:not(:disabled):not(.disabled):active {

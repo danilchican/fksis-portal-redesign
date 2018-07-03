@@ -128,7 +128,49 @@
 <!--INDEX PAGE CONTENT START-->
 <div id="fksis-content">
     <div class="container">
-        .....Обратная связь....
+        <div class="row">
+            <h1 class="fksis-page-title col-12">Обратная связь</h1>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="info-block">
+                    <div class="info-block-head">Задать вопрос</div>
+                    <div class="info-block-content m-4">
+                        <div class="col-sm-10 col-md-9 offset-md-1">
+                            <form action="/" method="post" id="fksis-feedback-form">
+                                <div class="form-group row">
+                                    <label for="category" class="col-form-label col-sm-4 label-control">
+                                        Категория *
+                                    </label>
+                                    <select class="form-control col-sm-8" id="category" required="required">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-form-label col-sm-4 label-control" for="email">Ваш email *</label>
+                                    <input type="email" class="form-control col-sm-8" id="email" required="required">
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-form-label col-sm-4 label-control" for="message">Сообщение
+                                        *</label>
+                                    <textarea class="form-control col-sm-8" id="message" rows="7"></textarea>
+                                </div>
+                                <div class="form-group row">
+                                    <button type="submit"
+                                            class="btn btn-primary btn-sm mb-2 col-sm-4 col-md-3 col-lg-2 offset-4">
+                                        Отправить
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <!--INDEX PAGE CONTENT END-->

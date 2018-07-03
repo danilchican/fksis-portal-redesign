@@ -71,6 +71,16 @@
   #fksis-quick-links {
     display: none;
   }
+
+  .label-control {
+    padding: 7px 0;
+  }
+}
+
+@media (min-width: 580px) {
+  .label-control {
+    text-align: right;
+  }
 }
 
 @media (max-width: 575.98px) {

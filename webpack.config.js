@@ -4,9 +4,9 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const extractCSS = new ExtractTextPlugin('css/[name].css');
 const extractImages = new CopyWebpackPlugin([{
-    from: './src/images/**/*',
-    to: path.resolve(__dirname, 'build/images/[name].[ext]'),
-    toType: 'template'
+    from: 'src/images',
+    to: path.resolve(__dirname, 'build/images'),
+    toType: 'dir'
 }]);
 const extractHTML = new CopyWebpackPlugin([{
     from: './src/*.html',

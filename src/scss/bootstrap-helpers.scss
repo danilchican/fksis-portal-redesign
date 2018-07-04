@@ -6,6 +6,10 @@
   transition: all .25s ease;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: Arial, Verdana, Tahoma, sans-serif;
   font-size: 14px;
@@ -70,4 +74,8 @@ input {
   .btn-outline-secondary:hover {
     color: #596068;
   }
+}
+
+#global-wrapper {
+  min-height: 100%;
 }

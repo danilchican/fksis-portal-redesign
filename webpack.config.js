@@ -1,6 +1,7 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const DeleteFilesOrFoldersWebpackPlugin = require('./webpack_plugins/deleteFilesOrFoldersWepbackPlugin');
 
 const extractCSS = new ExtractTextPlugin('css/[name].css');
 const extractImages = new CopyWebpackPlugin([{
@@ -53,6 +54,7 @@ module.exports = {
     plugins: [
         extractCSS,
         extractImages,
-        extractHTML
+        extractHTML,
+        new DeleteFilesOrFoldersWebpackPlugin({root: __dirname, include: ['images']})
     ]
 };

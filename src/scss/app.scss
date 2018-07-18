@@ -156,7 +156,7 @@
 }
 
 #fksis-slider {
-  background: left top url(' ../images/slider-bg.jpg') repeat-x;
+  background: left top url('../images/slider-bg.jpg') repeat-x;
   padding-top: 20px;
   border-bottom: 1px solid #e4e4e4;
 
@@ -164,7 +164,7 @@
     position: relative;
 
     .carousel-item {
-      background: -26px bottom url(' ../images/slider-light.png') no-repeat;
+      background: -26px bottom url('../images/slider-light.png') no-repeat;
 
       .carousel-item-title {
         color: #E7FBF0;
@@ -238,7 +238,7 @@
 }
 
 #fksis-content {
-  background: left top url(' ../images/gradient.png') repeat-x;
+  background: left top url('../images/gradient.png') repeat-x;
   min-height: 500px;
   padding: 25px 0;
 
@@ -340,7 +340,7 @@
   }
 
   .fksis-footer-contacts {
-    background: url(' ../images/phone.png ') left center no-repeat;
+    background: url('../images/phone.png') left center no-repeat;
     font-size: 30px;
     font-style: italic;
     line-height: 2rem;
@@ -364,7 +364,7 @@
 
   button[type="submit"]:hover {
     background: #7db9e8; /* Old browsers */
-    background: -moz-linear-gradient(top, #7db9e8  0%, #049c80 0%, #026757 100%); /* FF3.6-15 */
+    background: -moz-linear-gradient(top, #7db9e8 0%, #049c80 0%, #026757 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #7db9e8 0%, #049c80 0%, #026757 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #7db9e8 0%, #049c80 0%, #026757 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=' #049c80 ', endColorstr=' #026757 ', GradientType=0); /* IE6-9 */

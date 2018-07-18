@@ -1,5 +1,6 @@
 # fksis-portal-redesign
 This repository affects fksis-diploma as part of new responsive design developed for the unauthorized users.
+To view pages you should open `build` folder.
 
 ## How to run
 1. Run command `npm run build` which will create a new dir named `build`

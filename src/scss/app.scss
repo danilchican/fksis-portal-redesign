@@ -347,8 +347,36 @@
   }
 }
 
-.fksis-page-title {
-  font-size: 24px;
+#fksis-page {
+  .fksis-page-title {
+    font-size: 24px;
+  }
+
+  #fksis-page-advert-title-date {
+    color: #666;
+  }
+
+  .fksis-page-content {
+    font-size: 13px;
+    text-align: justify;
+  }
+
+  .fksis-page-socials {
+    border-bottom: 1px dotted #d8d6d6;
+    margin: 20px 15px;
+  }
+
+  .info-block {
+    .info-list-item {
+      a {
+        font-size: 13px;
+      }
+
+      .info-item-head {
+        line-height: 1.15;
+      }
+    }
+  }
 }
 
 #fksis-feedback-form {

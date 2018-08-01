@@ -298,15 +298,14 @@
       text-transform: lowercase;
     }
 
-    .info-block-content.news-list .info-news-item {
-      .info-item-description {
-        .info-news-item-image {
-          width: 100px;
-          max-height: 150px;
-          margin-right: 15px;
-          float: left;
-        }
-      }
+  }
+
+  .info-block, .fksis-page-item {
+    .info-news-item-image {
+      width: 100px;
+      max-height: 150px;
+      margin-right: 15px;
+      float: left;
     }
   }
 

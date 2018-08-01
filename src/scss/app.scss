@@ -426,3 +426,33 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=' #049c80 ', endColorstr=' #026757 ', GradientType=0); /* IE6-9 */
   }
 }
+
+/* PAGINATION */
+
+.pagination__numbers {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.pagination__number {
+  display: inline-block;
+  padding: 0 3px;
+  font-size: 13px;
+  background-color: #f1f1f1;
+  margin: 0 2px;
+}
+
+.pagination__number.disabled {
+  background-color: transparent;
+}
+
+.pagination__number.active {
+  background: transparent;
+  color: #737372;
+  margin: 0;
+}
+
+.pagination__number:first-child {
+  margin-left: 0;
+}

@@ -366,6 +366,34 @@
     margin: 20px 15px;
   }
 
+  #fksis-page-all-items {
+
+    .fksis-page-title {
+      color: #666;
+      font-size: 11px;
+      text-transform: uppercase;
+      line-height: 1em;
+    }
+
+    .fksis-page-item {
+      border-bottom: 1px dotted #d8d6d6;
+      padding-bottom: 8px;
+      font-size: 13px;
+
+      .fksis-page-item-head {
+        font-size: 14px;
+
+        .publish-date {
+          color: #666;
+        }
+      }
+
+      .show-more {
+        text-transform: lowercase;
+      }
+    }
+  }
+
   .info-block {
     .info-list-item {
       a {

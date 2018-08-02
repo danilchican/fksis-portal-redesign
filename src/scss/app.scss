@@ -423,6 +423,7 @@
 
       .dropdown-menu {
         position: relative;
+        z-index: 1;
 
         .dropdown-item {
           color: #45ADD8;
@@ -434,7 +435,9 @@
           background-color: #f3f3f3;
         }
 
-        .dropdown-item:hover {
+        .dropdown-item:hover,
+        .dropdown-item.active,
+        .dropdown-item:active {
           color: #EE4439;
         }
       }

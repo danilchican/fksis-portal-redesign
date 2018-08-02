@@ -404,6 +404,48 @@
       }
     }
   }
+
+  #fksis-sidebar-nav-menu {
+    ul {
+      list-style: none;
+
+      .nav-link {
+        padding: 0;
+      }
+
+      .dropdown.show {
+        overflow: hidden;
+
+        > .nav-link {
+          color: #717171;
+        }
+      }
+
+      .dropdown-menu {
+        position: relative;
+
+        .dropdown-item {
+          color: #45ADD8;
+          white-space: inherit;
+        }
+
+        .dropdown-item.active,
+        .dropdown-item:active {
+          background-color: #f3f3f3;
+        }
+
+        .dropdown-item:hover {
+          color: #EE4439;
+        }
+      }
+
+      .dropdown-menu.show {
+        background-color: #fbfbfb;
+        border: none;
+        border-radius: 0;
+      }
+    }
+  }
 }
 
 #fksis-feedback-form {

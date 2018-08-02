@@ -133,30 +133,53 @@
             <div id="fksis-page" class="row">
                 <div class="col-md-4 col-sm-12 col-xs-12 order-last order-md-first">
                     <div class="info-block">
-                        <!--TODO change to 2-level menu-->
                         <div class="info-block-head">О факультете</div>
-                        <div class="info-block-content info-list sidebar-menu">
-                            <div class="info-list-item info-menu-item">
-                                <p class="info-item-head">
-                                    <a href="/">Общая информация</a>
-                                </p>
+                        <nav class="navbar navbar-expand p-0" id="fksis-sidebar-nav-menu">
+                            <div class="collapse navbar-collapse">
+                                <ul class="info-block-content info-list p-0 m-0 w-100">
+                                    <li class="nav-item active info-list-item info-menu-item">
+                                        <a class="nav-link" href="#">Общая информация</a>
+                                    </li>
+                                    <li class="nav-item info-list-item info-menu-item">
+                                        <a class="nav-link" href="#">Структура факультета</a>
+                                    </li>
+                                    <li class="nav-item info-list-item info-menu-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown-123"
+                                           data-toggle="dropdown" aria-expanded="false">
+                                            Образование
+                                        </a>
+                                        <div class="dropdown-menu w-100 p-0" aria-labelledby="dropdown-123">
+                                            <a class="dropdown-item" href="#">Первая ступень высшего образования</a>
+                                            <a class="dropdown-item" href="#">Магистратура</a>
+                                            <a class="dropdown-item" href="#">Первокурсникам</a>
+                                            <a class="dropdown-item" href="#">Старостам</a>
+                                            <a class="dropdown-item" href="#">Учебный процесс</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item info-list-item info-menu-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown-234"
+                                           data-toggle="dropdown" aria-expanded="false">
+                                            Направления деятельности
+                                        </a>
+                                        <div class="dropdown-menu w-100 p-0" aria-labelledby="dropdown-234">
+                                            <a class="dropdown-item" href="#">Олимпиады</a>
+                                            <a class="dropdown-item" href="#">Академические инициативы</a>
+                                            <a class="dropdown-item" href="#">Центр профессионального развития</a>
+                                            <a class="dropdown-item" href="#">Международное сотрудничество</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item info-list-item info-menu-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown-345"
+                                           data-toggle="dropdown" aria-expanded="false">
+                                            Обратная связь
+                                        </a>
+                                        <div class="dropdown-menu w-100 p-0" aria-labelledby="dropdown-345">
+                                            <a class="dropdown-item" href="#">Задать вопрос</a>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="info-list-item info-menu-item">
-                                <p class="info-item-head">
-                                    <a href="/">Инфраструктура</a>
-                                </p>
-                            </div>
-                            <div class="info-list-item info-menu-item">
-                                <p class="info-item-head">
-                                    <a href="/">Сотрудничество</a>
-                                </p>
-                            </div>
-                            <div class="info-list-item info-menu-item">
-                                <p class="info-item-head">
-                                    <a href="/">Контакты</a>
-                                </p>
-                            </div>
-                        </div>
+                        </nav>
                     </div>
                 </div>
                 <div class="col">

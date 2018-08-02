@@ -409,6 +409,10 @@
     ul {
       list-style: none;
 
+      .info-menu-item {
+        overflow: hidden;
+      }
+
       .nav-link {
         padding: 0;
       }
@@ -500,4 +504,8 @@
 
 .gsc-tabsArea {
   display: none;
+}
+
+.collapsing {
+  transition: none !important;
 }
